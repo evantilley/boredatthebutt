@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h1 Welcome to Bored@TheButt
+    if user
+        a(href = '/users/logout') Logout
+    else
+        a(href = '/users/register') Sign Up! 
+        br
+        a(href = '/users/login') Login!
+        br

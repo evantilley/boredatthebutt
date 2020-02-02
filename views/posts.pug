@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 #{title}
+    each post, i in posts
+        ul.list-group
+            li.list-group-item= "Posted by" + post.author
+            li.list-group-item= post.title
+            li.list-group-item= post.body
+        <br>
