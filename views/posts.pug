@@ -2,6 +2,7 @@ extends layout
 
 block content
     h1 #{title}
+    a(href = '/posts/add') Add Post
     each post, i in posts
         ul.list-group
             li.list-group-item= "Posted by" + post.author
