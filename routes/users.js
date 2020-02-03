@@ -19,9 +19,12 @@ router.post('/register', function(req, res){
     let password2 = req.body.password2;
 
     req.checkBody('name', 'Name is required').notEmpty();
+    req.checkBody('name', 'Cannot be longer than 50 chars').isLength({max: 50})
     req.checkBody('email', 'Email is required').notEmpty();
     req.checkBody('email', 'Email is not valid').isEmail();
+    req.checkBody('email', 'Cannot be longer than 50 chars').isLength({max: 50});
     req.checkBody('username', 'Username is required').notEmpty();
+    req.checkBody('username', 'Cannot be longer than 25 chars').isLength({max: 25});
     req.checkBody('password', 'Password is required').notEmpty();
     req.checkBody('password2', 'Passwords do not match').equals(req.body.password);
 
