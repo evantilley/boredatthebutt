@@ -28,7 +28,7 @@ router.get('/add', ensureAuthenticated, function(req, res){
 //Add Submit POST Route
 router.post('/add', function(req, res){
 
-    req.checkBody('title', '100 chars max').isLength({ max:100 });
+    req.checkBody('title', '100 chars max').isLength({ min:100 });
     req.checkBody('title', 'Title is required').notEmpty();
 
    // req.checkBody('author', 'Author is required').notEmpty();
