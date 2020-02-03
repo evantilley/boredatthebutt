@@ -3,6 +3,7 @@ extends layout
 block content
     h1 Welcome to Bored@TheButt
     if user
+        a(href = '/posts/add') Add Post
         a(href = '/users/logout') Logout
     else
         a(href = '/users/register') Sign Up! 
