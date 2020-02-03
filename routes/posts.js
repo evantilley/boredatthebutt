@@ -28,11 +28,13 @@ router.get('/add', ensureAuthenticated, function(req, res){
 //Add Submit POST Route
 router.post('/add', function(req, res){
 
-    req.checkBody('title', 'Title is required').notEmpty();
     req.checkBody('title', '100 chars max').isLength({ max:100 });
+    req.checkBody('title', 'Title is required').notEmpty();
+
    // req.checkBody('author', 'Author is required').notEmpty();
+   req.checkBody('body', '500 chars max').isLength({max: 500});
     req.checkBody('body', 'Body is required').notEmpty();
-    req.checkBody('body', '500 chars max').isLength({max: 500});
+
 
     //get errors
     let errors = req.validationErrors();
