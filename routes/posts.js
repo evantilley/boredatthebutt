@@ -70,7 +70,7 @@ function ensureAuthenticated(req, res, next){
         return next();
     } else{
         req.flash('danger', "Please login sonz")
-        res.redirect('/')
+        res.redirect('/must_login')
     }
 }
 

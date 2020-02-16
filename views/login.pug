@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    h1 Login
+    h1 Login to Bored@TheButt
     form(method='POST', action = '/users/login')  
         #form-group
             label Username:
@@ -12,3 +12,4 @@ block content
             input.form-control(name = 'password', type = 'password')
             
         input.btn.btn-primary(type = "submit", value = "Submit")
+    img(src='https://i.redd.it/lqcbyi2itqq31.jpg' alt='login' style='width:30%; height:auto;')

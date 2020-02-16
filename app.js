@@ -90,10 +90,15 @@ app.get('*', function(req, res, next){
 
 //home route
 app.get('/', function(req, res){
-    res.render('index', {
-        title: "Posts"
-    });
+    // res.render('index', {
+    //     title: "Posts"
+    // });
+    res.render("index.ejs")
 });
+
+app.get('/must_login', function(req, res){
+    res.render("must_login.ejs")
+})
 
 let posts = require("./routes/posts");
 //anything with /posts will use the /routes/posts file
