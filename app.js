@@ -41,6 +41,8 @@ app.use(bodyParser.json())
 
 //set public folder, for static files
 app.use(express.static(path.join(__dirname, 'public')));
+//if problems, delete this line
+app.use(express.static(path.join(__dirname, 'views')));
 
 //Express Session MiddleWare
 app.use(session({
@@ -98,6 +100,10 @@ app.get('/', function(req, res){
 
 app.get('/must_login', function(req, res){
     res.render("must_login.ejs")
+})
+
+app.get('/secret', function(req, res){
+    res.sendFile(path.join(__dirname + "/views/2_ppc.html"))
 })
 
 let posts = require("./routes/posts");

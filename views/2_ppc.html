@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+        <link rel="stylesheet"
+        href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <style>
+            .light-gray{
+                background-color:lightgray;
+            }
+            .max-width{
+                width: 100%;
+            }
+            .large-font{
+                font-size: x-large;
+            }
+            .padding-top{
+                padding:5%;
+            }
+            .bold{
+                font-weight: bold;
+            }
+            .light-blue{
+                background-color: lightblue;
+            }
+            .darker-blue{
+                background-color: #096096;
+            }
+            .even-darker-blue{
+                background-color: darkblue;
+            }
+            .margin-right{
+                margin-right: 4%;
+            }
+            .padding-bottom{
+                padding-bottom: 50px;
+            }
+            .height{
+                height: 5%;
+            }
+            .margin-left{
+                margin-left: 30%;
+            }
+            .yellow{
+                background-color: lightyellow;
+            }
+            .white{
+                background-color: white;
+            }
+            .draggable{
+                z-index: 100;
+            }
+            .div{
+                z-index: 1;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src = "2_ppc.js"></script>
+    
+    <div class = "container">
+    <div class = "row light-gray bold">
+        <span class = "padding-top large-font">Party Planning Committee</span>
+    </div>
+    <div class = "row">
+        &nbsp;
+    </div>
+    <div class = "row">
+        <div class = "col-md-2 light-blue margin-right padding-bottom non-ppc-surround" id = "non-ppc-label">
+            <span class = "bold">Non-PPC</span>
+        </div>
+        <div class = "col-md-2 light-blue padding-bottom ppc-suround" id = "ppc-label">
+            <span class = "bold">PPC</span>
+        </div>
+        <div class = "col-md-8">
+
+        </div>
+    </div>
+    <div class = "row">
+        <div class = "col-md-2" id = "non-ppc">
+        </div>
+        <div class = "col-md-2 margin-right" id = "ppc">
+        </div>
+    </div>
+    </div>
+
+    </body>
+
+</html>
