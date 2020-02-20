@@ -2,6 +2,14 @@ extends layout
 
 block content
     h1 Login to Bored@TheButt
+        if user
+            a(href = '/') Home
+            a(href = '/posts/add') Add Post 
+            a(href = '/users/logout') Logout
+        else
+            br
+            a(href = '/') Home
+        br
     form(method='POST', action = '/users/login')  
         #form-group
             label Username:

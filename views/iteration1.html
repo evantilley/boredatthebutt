@@ -1,0 +1,114 @@
+<html>
+    <head>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+        <script src = "script.js"></script>
+    <style>
+
+        .center{
+            margin: auto;
+        }
+        .light-blue{
+            background-color: lightblue;
+        }
+        .large-font{
+            font-size: 5vh;
+        }
+        .semi-large-font{
+            font-size: 3vh;
+        }
+        .parent {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .image1 {
+            position: relative;
+            top: 42;
+            left: 40;
+            z-index: 3;
+        }
+        .image2 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 0
+        }
+        .image3{
+            position: absolute;
+            top: 70px;
+            left: 67px;
+            z-index:2;
+        }
+        .image4 {
+            position: absolute;
+            top: 175px;
+            left: 155px;
+            z-index: 7
+        }
+        .scale{
+            width: 60%;
+            height: auto;
+        }
+
+    </style>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "row">
+                <div class = "light-blue col-md-12 text-center">
+                    <span class = "large-font">Welcome to AutoAnim!</span> <br>
+                    <span>We currently have only this one page, but we're working on it!</span> <br>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <span class = "semi-large-font">Okay, so how's this awesome site work?</span> <br>
+                    <span>Check out the template below! See the spinning ferris wheel?</span> <br>
+                    <span>Click on any one of the items to the left to swap them out with the ferris wheel!</span> <br>
+                    <span>Next week, you should be able to upload your own image too :D</span> <br> <br>
+
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-6">
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <span>Press the tire to select it!</span> <br>
+                            <img id = "tire" class = "scale" src = "images/tires.png"> <br>
+                            <span>Press the ferris wheel to select it!</span> <br>
+                            <img id = "ferris_wheel_select" src = "images/ferris_wheel.png"> <br>
+                            <span>Press the lemon to select it!</span> <br>
+                            <img id = "lemon" src = "images/lemon.png"> <br>
+                            <span>Press the logo to select it!</span> <br>
+                            <img class = "scale" id = "columbia" src = "images/columbia_logo_circle.png"> <br>
+                        </div>
+                    </div>
+                </div>
+                <div class = "col-md-6">
+                    <div class = "parent">
+                        <img class = "image1" id="wheel"
+                        src="https://raw.githubusercontent.com/chini5ko/HCI_PUBILC/master/img/coke/coke-caps-v2.png">
+                        <img class = "image3" id = "ferris"
+                        src = "images/ferris_wheel.png">
+                        <img class = "image4" id = "coke"
+                        src = "images/coke_bottle.png">  
+                        <img class= "image2"
+                        src="images/coke-ferris-wheel.png">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </body>
+
+</html>

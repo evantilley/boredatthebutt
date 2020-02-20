@@ -106,6 +106,10 @@ app.get('/secret', function(req, res){
     res.sendFile(path.join(__dirname + "/views/2_ppc.html"))
 })
 
+app.get('/first_iteration', function(req, res){
+    res.sendFile(path.join(__dirname + "/views/iteration1.html"))
+})
+
 let posts = require("./routes/posts");
 //anything with /posts will use the /routes/posts file
 app.use('/posts', posts)
