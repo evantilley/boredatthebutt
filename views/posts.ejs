@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Posts</title>
+
+        <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+        <style>
+            .bold{
+                font-weight: bold;
+            }
+            .columbia-blue{
+                background-color: #B9D9EB;
+            }
+            .large{
+                font-size: 8vh;
+            }
+            .center{
+                margin: auto;
+            }
+            .semi-large{
+                font-size: 5vh;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class = "container">
+            <div class = "row columbia-blue center text-center">
+                <div class = "col-md-12 center">
+                <span class = "large bold">Bored@TheButt</span>
+            </div>
+            </div>
+            <div class = "row columbia-blue center">
+                <div class = "col-md-2 center">
+                    <span><a href = /users/register>Sign Up</a></span>
+                </div>
+                <div class = "col-md-2 center">
+                    <span><a href = /users/login>Login </a></span>   
+                </div>
+                <div class = "col-md-2 center">
+                    <span><a href = "posts">View Posts </a></span>     
+                </div>
+                <div class = "col-md-2 center">
+                    <span>Butler Secrets</span>     
+                </div>
+                <div class = "col-md-2 center">
+                    <span><a href = "tuns.html">Tuns </a></span> 
+                </div>
+                <div class = "col-md-2 center">
+                    <span>Info</span>           
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <span class = "bold semi-large">Bored@TheButtPosts</span> <br> <br>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <span>Welcome to the repository to dump all your thoughts out while you're bored at Butler!</span> <br>
+                    <span>Whether you're in 301, the cafe, the 4th floor, or even the Rare Books and Manuscripts Library, let your thoughts out!</span> <br>
+                    <span>Advanced Programming got you down? Your philosophy professor just assigned another essay? Vent about it here!</span> <br>
+                    <span>Heck, you don't even have to be in Butler, who's gonna know if you're posting from (God Forbid) the Math Library.</span>
+                </div> 
+            </div> <br>
+            <div class = "row">
+                <div class = "col-md-12 text-center">
+                    <span class = "bold semi-large">Posts</span>
+                </div>
+            </div>
+            <div class = "row">
+                <div class = "col-md-12">
+                    <% for (var i = 0; i < posts.length;  i++ ) { %>
+                        <div class = "columbia-blue"
+                        ><span class = "bold"> Posted by: </span> <%- posts[i].author %> <br>
+                        <span class = "bold">Title: </span> <%- posts[i].author %> <br>
+                        <span class = "bold">Post: </span> <%- posts[i].body %> <br>
+                        </div><br>
+                        <% } %> 
+                </div>
+            </div> 
+        </div>
+
+    </body>
+
+
+</html>
+<!--h1 #{title}
+a(href = '/posts/add') Add Post
+each post, i in posts
+    ul.list-group
+        li.list-group-item= "Posted by" + post.author
+        li.list-group-item= post.title
+        li.list-group-item= post.body
+    <br>
+
+<h2><%-title%></h2>-->

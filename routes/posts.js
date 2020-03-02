@@ -10,7 +10,7 @@ router.get('/', ensureAuthenticated, function(req, res){
             console.log(err)
         } else{
             console.log(Posts)
-                res.render('posts', {
+                res.render('posts.ejs', {
                 title: "Posts",
                 posts: Posts //array of posts
             });
